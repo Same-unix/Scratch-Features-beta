@@ -1,0 +1,22 @@
+{
+    "name": "Scratch Features",
+    "description": "Features for Scratch. That make scratch better and for scratch.mit.edu",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "webNavigation", "scripting", "tabs"],
+    "host_permissions": [
+        "https://api.scratch.mit.edu/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "./icon.png"
+        }
+    },
+    "icons": {
+        "128": "./icon.png"
+    }
+}
